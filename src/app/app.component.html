@@ -1,28 +1,28 @@
-<div class="container">
+<div class="container" *ngIf="weatherData">
   <div class="info">
     <div class="info__city">
-      Miasto
+      {{weatherData.location.name}}
     </div>
     <div class="info__temp">
-      {{20.6 | number: '1.0-0'}}°C
+      {{weatherData.current.temp_c | number: '1.0-0'}}°C
     </div>
   </div>
   <div class="details">
     <div class="details__element">
       <img src="../assets/temperature-min-svgrepo-com.svg" alt="">
-      {{20.6 | number: '1.0-0'}}°C
+      {{weatherData.forecast.forecastday[0].day.mintemp_c | number: '1.0-0'}}°C
     </div>
     <div class="details__element">
       <img src="../assets//temperature-max-svgrepo-com.svg" alt="">
-      {{20.6 | number: '1.0-0'}}°C
+      {{weatherData.forecast.forecastday[0].day.maxtemp_c | number: '1.0-0'}}°C
     </div>
     <div class="details__element">
       <img src="../assets/drop-humidity-icon.svg" alt="">
-      {{20.6 | number: '1.0-0'}}%
+      {{weatherData.current.humidity | number: '1.0-0'}}%
     </div>
     <div class="details__element">
       <img src="../assets/wind-icon.svg" alt="">
-      {{20.6 | number: '1.0-0'}}km/h
+      {{weatherData.current.wind_kph | number: '1.0-0'}}km/h
     </div>
   </div>
 </div>
