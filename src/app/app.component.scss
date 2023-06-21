@@ -1,5 +1,28 @@
+.search {
+    max-width: 600px;
+    width: 80vw;
+    margin-bottom: 10px;
+
+    input {
+        outline: none;
+        backdrop-filter: blur(5px);
+        background-color: rgba(#000000, 0.3);
+        border: none;
+        border-radius: 25px;
+        font-size: calc(var(--size) * 0.5);
+        padding: 10px;
+        width: calc(100% - 20px);
+        text-align: center;
+        color: white;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 95vw;
+    }
+}
+
 .container {
-    height: 80vh;
+    height: 70vh;
     max-width: 600px;
     width: 80vw;
 
