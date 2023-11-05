@@ -1,7 +1,7 @@
 # Weather App
 
 ## General info
-Simple Weather App build in Angular, and connected to open weather API, which provides basic weather information for the selected city.
+Simple Weather App build in Angular, and connected to open weather API. Provides basic weather information for the selected city.
 
 ## Technologies
 <div align="left">
